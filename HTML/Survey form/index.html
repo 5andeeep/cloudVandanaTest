@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Customer Survey Form</h1>
+        <form class="form" onsubmit="submitForm()">
+            <div class="name">
+                <div>
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" required>
+                </div>
+                <div>
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" required>
+                </div>
+            </div>
+            <div class="dateOfBirth">
+                <p>Date of Birth</p>
+                <input type="date" id="dateOfBirth" required>
+            </div>
+            <div class="countries">
+                <p>Country?</p>
+                <select id="countries" required>
+                    <option value="" selected disabled>Select One</option>
+                    <option value="India">India</option>
+                    <option value="Russia">Russia</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="China">China</option>
+                    <option value="Nepal">Nepal</option>
+                </select>
+            </div>
+            <div id="gender">
+                <p>Gender</p>
+                <input type="radio" name="gender" id="male" value="Male">Male
+                <input type="radio" name="gender" id="female" value="Female">Female
+            </div>
+            <div class="profession">
+                <p>Profession</p>
+                <input type="text" id="profession" required>
+            </div>
+            <div class="email">
+                <p>Email</p>
+                <input type="email" id="email" required>
+            </div>
+            <div class="mobile-number">
+                <p>Phone Number</p>
+                <input type="text" id="phoneNumber" required maxlength="10">
+            </div>
+            <div class="btns">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
